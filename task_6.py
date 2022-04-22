@@ -30,7 +30,7 @@ new_file = ''
 with open('test_file.txt', 'rb') as file:
     for line in file:
         result = detect(line)
-        new_file += line.decode(result['encoding']).encode('utf-8').decode('utf-8').strip('\n')
+        new_file += line.decode(result['encoding']).encode('utf-8').decode('utf-8')
 
 with open('test_utf_8.txt', 'w', encoding='utf-8') as file:
     file.write(new_file)
