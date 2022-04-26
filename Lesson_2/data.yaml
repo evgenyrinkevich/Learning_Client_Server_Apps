@@ -1,0 +1,9 @@
+items:
+- computer
+- printer
+- mouse
+items_price:
+  computer: 200€ - 1000€
+  printer: 5€ - 50€
+  mouse: 400₽ - 700₽
+item_quantity: 3
