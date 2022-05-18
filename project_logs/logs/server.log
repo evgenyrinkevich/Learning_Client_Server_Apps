@@ -1,0 +1,6 @@
+2022-05-18 10:20:53,654 - INFO - server.py - Server is up. Port for connections: 7777, address, server is listening to: any
+2022-05-18 10:20:57,412 - INFO - server.py - Connection with ('127.0.0.1', 38642) is established
+2022-05-18 10:20:57,412 - INFO - server.py - Message {'action': 'presence', 'time': 1652858457.4123871, 'user': {'account_name': 'Guest'}} received from client
+2022-05-18 10:20:57,412 - DEBUG - server.py - Processing message {'action': 'presence', 'time': 1652858457.4123871, 'user': {'account_name': 'Guest'}} from client
+2022-05-18 10:20:57,412 - INFO - server.py - Response {'response': 200} to client is formed
+2022-05-18 10:20:57,412 - INFO - server.py - Connection with ('127.0.0.1', 38642) is closed

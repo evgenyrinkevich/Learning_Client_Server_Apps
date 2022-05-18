@@ -1,0 +1,5 @@
+2022-05-18 10:20:57,412 - INFO - client.py - Assigning DEFAULT_IP_ADDRESS: 127.0.0.1, DEFAULT_PORT: 7777
+2022-05-18 10:20:57,412 - INFO - client.py - Client is up: server address: 127.0.0.1, port: 7777
+2022-05-18 10:20:57,412 - DEBUG - client.py - presence message is formed for Guest user
+2022-05-18 10:20:57,412 - DEBUG - client.py - Processing {'response': 200} message from server
+2022-05-18 10:20:57,412 - INFO - client.py - Receiver response from server: 200: OK
