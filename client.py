@@ -2,17 +2,19 @@ import sys
 import json
 import socket
 import time
-from common.settings import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR, DEFAULT_IP_ADDRESS, DEFAULT_PORT
+from common.settings import ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR, DEFAULT_IP_ADDRESS, \
+    DEFAULT_PORT
 from common.utils import get_message, send_message
 
 from exceptions import ReqFieldMissingError
 import logging
 import project_logs.config.config_client
-
+from decorators import Log
 
 logger = logging.getLogger('client')
 
 
+@Log()
 def create_presence(account_name='Guest'):
     """
     Generates request indicating that client is present
@@ -27,6 +29,7 @@ def create_presence(account_name='Guest'):
     }
 
 
+@Log()
 def process_answer(message):
     """
     Processes response from the server
@@ -40,7 +43,6 @@ def process_answer(message):
 
 
 def main():
-
     # loading IP and port number from command line
     try:
         server_address = sys.argv[1]
@@ -76,4 +78,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

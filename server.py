@@ -5,11 +5,12 @@ from common.settings import ACTION, ACCOUNT_NAME, RESPONSE, MAX_CONNECTIONS, PRE
 from common.utils import get_message, send_message
 import logging
 import project_logs.config.config_server
-
+from decorators import log
 
 logger = logging.getLogger('server')
 
 
+@log
 def process_client_message(message):
     """
     Checks if message is in correct format and returns response

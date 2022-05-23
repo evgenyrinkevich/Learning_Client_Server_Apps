@@ -1,7 +1,10 @@
 import json
+
+from decorators import log
 from .settings import MAX_PACKAGE_LENGTH, ENCODING
 
 
+@log
 def get_message(client):
     """
     Gets message from client in bytes. Returns dict
@@ -16,6 +19,7 @@ def get_message(client):
     raise ValueError
 
 
+@log
 def send_message(sock, message):
     """
     Converts message from dict to bytes and sends it to sock
