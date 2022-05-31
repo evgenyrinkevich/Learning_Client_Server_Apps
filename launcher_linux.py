@@ -20,18 +20,8 @@ while True:
         )
         print(p)
         time.sleep(0.1)
-        for i in range(2):
-            p = f'python "{catalog}/client.py" -m send'
-            PROCESS.append(subprocess.Popen([
-                'xterm',
-                '-hold',
-                '-e',
-                p])
-            )
-            print(p)
-            time.sleep(0.1)
-        for i in range(5):
-            p = f'python "{catalog}/client.py" -m listen'
+        for i in range(3):
+            p = f'python "{catalog}/client.py" -n test{i}'
             PROCESS.append(subprocess.Popen([
                 'xterm',
                 '-hold',
